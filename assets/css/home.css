@@ -1,0 +1,57 @@
+
+div.container a.quiz_link {
+  display: block;
+  overflow: auto;
+  clear: both;
+  width: 100%;
+  text-decoration: none;
+  padding: 1rem 1.15rem;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  background-color: #e8eaed;
+  text-align: center;
+  font-weight: bold;
+}
+div.container a.quiz_link:hover {
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),#e8eaed;
+}
+
+div.container div.logo_top {
+  text-align: center;
+  margin: 1rem 0;
+  margin-bottom: 1.5rem;
+  overflow: auto;
+}
+div.container div.logo_top p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  clear: both;
+  float: left;
+  margin-top: 0.25rem;
+}
+div.container div.logo_top img {
+  height: 2.5rem;
+  margin-right: .125rem;
+  width: auto;
+  display: inline-block;
+  vertical-align: text-top;
+}
+div.container div.logo_top h1 {
+  font-size: 1.625rem;
+  line-height: 2.5rem;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+div.container div.description h1 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+div.container div.description p, div.container div.description p * {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01rem;
+}
