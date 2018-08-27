@@ -2,7 +2,7 @@ var questions = ['My nation should stand up for human rights.', 'My government s
 var question_points = [];
 
 questions.forEach(function(question,question_index){
-  document.querySelector("div.questions").innerHTML += '<div class="question"><p>' + question + '</p><h2><span style="color: transparent;">dis</span>agree</h2><div class="buttonContainer"><button></button></div><div class="buttonContainer"><button></button></div><div class="buttonContainer"><button></button></div><div class="buttonContainer"><button></button></div><div class="buttonContainer"><button></button></div><h2 class="disagree">disagree</h2></div>';
+  document.querySelector("div.questions").innerHTML += '<div class="question"><p>' + question + '</p><h2><span style="color: transparent;">dis</span>agree</h2><div class="buttonContainer"><button ans="strongagree"></button></div><div class="buttonContainer"><button ans="agree"></button></div><div class="buttonContainer"><button ans="neutral"></button></div><div class="buttonContainer"><button ans="disagree"></button></div><div class="buttonContainer"><button ans="strongdisagree"></button></div><h2 class="disagree">disagree</h2></div>';
 });
 
 (function(){
@@ -17,4 +17,18 @@ function answerQuestion(button){
     button.parentElement.parentElement.getElementsByClassName("active")[0].removeAttribute("class");
   }
   button.setAttribute("class","active");
+}
+
+document.querySelector("button.submitbtn").onclick = function(){
+  var questionResults = [];
+  var questionsElements = document.querySelector("div.questions").getElementsByClassName("question");
+  for(var questionIndex = 0;questionIndex < questionsElements.length;questionIndex++){
+    if(questionsElements[questionIndex].getElementsByClassName("active").length > 0){
+      questionResults.push(questionsElements[questionIndex].getElementsByClassName("active")[0].getAttribute("ans"));
+    }else{
+      questionResults.push("neutral");
+    }
+  }
+  localStorage.setItem("capitolquiz_question_answers",JSON.stringify(questionResults));
+  window.location = "results.html";
 }
