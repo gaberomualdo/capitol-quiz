@@ -1,0 +1,104 @@
+div.container div.logo_top {
+  margin-bottom: 2rem;
+  overflow: auto;
+}
+div.container div.logo_top img {
+  height: 1.75rem;
+  margin-right: .375rem;
+  width: auto;
+  display: block;
+  vertical-align: text-top;
+  float: left;
+}
+div.container div.logo_top h1 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  display: block;
+  vertical-align: text-top;
+  float: left;
+}
+div.questions {
+  display: block;
+  overflow: auto;
+}
+div.container div.questions div.question {
+  text-align: center;
+  overflow: hidden;
+}
+div.container div.questions div.question p {
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+div.container div.questions div.question h2 {
+  font-size: 0.875rem;
+  display: inline-block;
+  color: #229955;
+  text-transform: uppercase;
+}
+div.container div.questions div.question h2.disagree {
+  color: var(--color-red);
+}
+div.container div.questions div.question div.buttonContainer {
+  background: transparent;
+  display: inline-block;
+  margin: 0 0.625rem;
+  vertical-align: text-top;
+  box-sizing: border-box;
+  height: 2rem;
+}
+div.container div.questions div.question button {
+  box-sizing: border-box;
+  margin: 0;
+  border: 4px solid var(--btn-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+div.container div.questions div.question button:hover, div.container div.questions div.question button.active {
+  background-color: var(--btn-color);
+}
+
+div.container div.questions div.question div.buttonContainer:nth-child(3) button,div.container div.questions div.question div.buttonContainer:nth-child(7) button {
+  --btn-color: #229955;
+  width: 2rem;
+  height: 2rem;
+}
+div.container div.questions div.question div.buttonContainer:nth-child(4),div.container div.questions div.question div.buttonContainer:nth-child(6) {
+  padding: 0.175rem 0;
+}
+div.container div.questions div.question div.buttonContainer:nth-child(4) button,div.container div.questions div.question div.buttonContainer:nth-child(6) button {
+  --btn-color: #229955;
+  width: 1.65rem;
+  height: 1.65rem;
+}
+
+div.container div.questions div.question div.buttonContainer:nth-child(5) {
+  padding: 0.25rem 0;
+}
+div.container div.questions div.question div.buttonContainer:nth-child(5) button {
+  --btn-color: #e8eaed;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+div.container div.questions div.question div.buttonContainer:nth-child(6) button, div.container div.questions div.question div.buttonContainer:nth-child(7) button {
+  --btn-color: var(--color-red);
+}
+
+@media (max-width: 600px) {
+  div.container div.questions div.question div.buttonContainer {
+    margin: 0 calc((100% - 10.3rem) / 10);
+  }
+  div.container div.questions div.question h2 {
+    position: absolute;
+    margin-top: 2.75rem;
+  }
+  div.container div.questions div.question h2:not(.disagree) {
+    left: calc(5% + ((100% - 10.3rem) / 10));
+  }
+  div.container div.questions div.question h2.disagree {
+    right: calc(5% + ((100% - 10.3rem) / 10));
+  }
+}

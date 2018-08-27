@@ -46,12 +46,12 @@ div.container div.logo_top h1 {
 }
 
 div.container div.description h1 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   margin-bottom: 0.5rem;
 }
 div.container div.description p, div.container div.description p * {
-  font-size: 0.8rem;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
   letter-spacing: 0.01rem;
 }
