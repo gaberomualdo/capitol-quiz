@@ -1,8 +1,9 @@
-div.container div.logo_top {
-  margin-bottom: 2rem;
+div.container a.logo_top {
+  margin-bottom: 2.5rem;
   overflow: auto;
+  display: block;
 }
-div.container div.logo_top img {
+div.container a.logo_top img {
   height: 1.75rem;
   margin-right: .375rem;
   width: auto;
@@ -10,7 +11,7 @@ div.container div.logo_top img {
   vertical-align: text-top;
   float: left;
 }
-div.container div.logo_top h1 {
+div.container a.logo_top h1 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   display: block;
@@ -31,6 +32,7 @@ div.container div.questions div.question p {
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 div.container div.questions div.question h2 {
   font-size: 0.875rem;
