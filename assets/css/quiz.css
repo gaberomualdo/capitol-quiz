@@ -98,8 +98,12 @@ div.container div.questions div.question div.buttonContainer:nth-child(6) button
   div.container div.questions div.question div.buttonContainer {
     margin: 0 calc((100% - 10.3rem) / 10);
   }
+  div.container a.logo_top {
+    margin-bottom: 2rem;
+  }
   div.container div.questions div.question {
     padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
   div.container div.questions div.question h2 span {
     display: none;
