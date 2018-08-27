@@ -34,7 +34,7 @@ div.container div.questions div.question p {
   margin-bottom: 1rem;
   font-weight: bold;
 }
-div.container div.questions div.question h2 {
+div.container div.questions div.question h2, div.container div.questions div.question h2 * {
   font-size: 0.875rem;
   display: inline-block;
   color: #229955;
@@ -62,8 +62,10 @@ div.container div.questions div.question button:hover, div.container div.questio
   background-color: var(--btn-color);
 }
 
+div.container div.questions div.question div.buttonContainer:nth-child(3), div.container div.questions div.question div.buttonContainer:nth-child(4) {
+  --btn-color: var(--color-green);
+}
 div.container div.questions div.question div.buttonContainer:nth-child(3) button,div.container div.questions div.question div.buttonContainer:nth-child(7) button {
-  --btn-color: #229955;
   width: 2rem;
   height: 2rem;
 }
@@ -71,7 +73,6 @@ div.container div.questions div.question div.buttonContainer:nth-child(4),div.co
   padding: 0.175rem 0;
 }
 div.container div.questions div.question div.buttonContainer:nth-child(4) button,div.container div.questions div.question div.buttonContainer:nth-child(6) button {
-  --btn-color: #229955;
   width: 1.65rem;
   height: 1.65rem;
 }
@@ -103,4 +104,26 @@ div.container div.questions div.question div.buttonContainer:nth-child(6) button
   div.container div.questions div.question h2.disagree {
     right: calc(5% + ((100% - 10.3rem) / 10));
   }
+}
+
+div.submitbtn_container {
+  display: block;
+  overflow: auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+div.submitbtn_container button.submitbtn {
+  font-size: 0.875rem;
+  color: #fff;
+  background-color: var(--color-green);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+div.submitbtn_container button.submitbtn:hover {
+  background-color: rgb(29,132,73);
 }

@@ -17,6 +17,7 @@ body {
 :root {
   --color-red: #cc0c2f;
   --color-blue: #00c;
+  --color-green: #229955;
 }
 div.container {
   width: 540px;
