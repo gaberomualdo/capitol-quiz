@@ -94,6 +94,12 @@ div.container div.questions div.question div.buttonContainer:nth-child(6) button
   div.container div.questions div.question div.buttonContainer {
     margin: 0 calc((100% - 10.3rem) / 10);
   }
+  div.container div.questions div.question {
+    padding-bottom: 2rem;
+  }
+  div.container div.questions div.question h2 span {
+    display: none;
+  }
   div.container div.questions div.question h2 {
     position: absolute;
     margin-top: 2.75rem;
@@ -115,7 +121,7 @@ div.submitbtn_container {
 div.submitbtn_container button.submitbtn {
   font-size: 0.875rem;
   color: #fff;
-  background-color: var(--color-green);
+  background-color: var(--color-red);
   padding: 0.75rem 1rem;
   border-radius: 4px;
   text-transform: uppercase;
@@ -125,5 +131,5 @@ div.submitbtn_container button.submitbtn {
   transition: background-color 0.25s;
 }
 div.submitbtn_container button.submitbtn:hover {
-  background-color: rgb(29,132,73);
+  background-color: rgb(184,0,27);
 }
