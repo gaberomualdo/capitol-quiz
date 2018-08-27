@@ -131,5 +131,5 @@ div.submitbtn_container button.submitbtn {
   transition: background-color 0.25s;
 }
 div.submitbtn_container button.submitbtn:hover {
-  background-color: rgb(184,0,27);
+  background-color: var(--color-dark-red);
 }

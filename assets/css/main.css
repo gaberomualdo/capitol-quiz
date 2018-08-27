@@ -18,6 +18,7 @@ body {
   --color-red: #cc0c2f;
   --color-blue: #00c;
   --color-green: #229955;
+  --color-dark-red: rgb(179,0,22);
 }
 div.container {
   width: 540px;

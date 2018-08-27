@@ -19,7 +19,7 @@ div.takequizbtn_container a.takequizbtn {
   text-decoration: none;
 }
 div.takequizbtn_container a.takequizbtn:hover {
-  background-color: rgb(184,0,27);
+  background-color: var(--color-dark-red);
 }
 
 
@@ -61,4 +61,13 @@ div.container div.description p, div.container div.description p * {
   line-height: 1.75;
   margin-bottom: 1rem;
   letter-spacing: 0.01rem;
+}
+div.container div.description a {
+  color: var(--color-red);
+  text-decoration: underline;
+  font-weight: bold;
+}
+div.container div.description a:hover {
+  color: var(--color-dark-red);
+  text-decoration: none;
 }
