@@ -1,0 +1,99 @@
+div.container a.logo_top {
+  margin-bottom: 1.5rem;
+  overflow: auto;
+  display: block;
+  float: left;
+}
+div.container a.logo_top img {
+  height: 1.75rem;
+  margin-right: .375rem;
+  width: auto;
+  display: block;
+  vertical-align: text-top;
+  float: left;
+}
+div.container a.logo_top h1 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  display: block;
+  vertical-align: text-top;
+  float: left;
+}
+
+header {
+  clear: both;
+}
+header h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+div.results {
+  overflow: auto;
+  margin-top: 1rem;
+}
+div.results div.result {
+  margin-bottom: 1.5rem;
+}
+div.results div.result h1 {
+  text-align: center;
+  font-size: 1.25rem;
+}
+div.results div.result div.bar,div.results div.result div.ends {
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+}
+div.results div.result div.bar div,div.results div.result div.bar h2,div.results div.result div.ends div {
+  height: 100%;
+  display: block;
+  float: left;
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 0 0.375rem;
+}
+div.results div.result div.bar h2 {
+  background-color: transparent;
+  width: 50%;
+  margin-top: -1.5rem;
+}
+div.results div.result div.bar h2.rightlabel {
+  float: right;
+  text-align: right;
+}
+div.results div.result div.bar div.left {
+  background-color: var(--color-blue);
+}
+div.results div.result div.bar div.right {
+  background-color: var(--color-red);
+  text-align: right;
+}
+
+div.results div.result div.ends {
+  margin-top: 0.25rem;
+}
+div.results div.result div.ends div {
+  text-transform: uppercase;
+}
+div.results div.result div.ends div.left {
+  color: var(--color-blue);
+}
+div.results div.result div.ends div.right {
+  color: var(--color-red);
+  float: right;
+}
+
+div.mainResult {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.75rem;
+  color: var(--color-red);
+}
+div.mainResult.d {
+  color: var(--color-blue);
+}

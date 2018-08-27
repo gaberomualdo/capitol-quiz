@@ -2,6 +2,7 @@ div.container a.logo_top {
   margin-bottom: 3.5rem;
   overflow: auto;
   display: block;
+  float: left;
 }
 div.container a.logo_top img {
   height: 1.75rem;
@@ -21,6 +22,7 @@ div.container a.logo_top h1 {
 div.questions {
   display: block;
   overflow: auto;
+  clear: both;
 }
 div.container div.questions div.question {
   text-align: center;
