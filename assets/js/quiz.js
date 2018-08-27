@@ -4,3 +4,17 @@ var question_points = [];
 questions.forEach(function(question,question_index){
   document.querySelector("div.questions").innerHTML += '<div class="question"><p>' + question + '</p><h2><span style="color: transparent;">dis</span>agree</h2><div class="buttonContainer"><button></button></div><div class="buttonContainer"><button></button></div><div class="buttonContainer"><button></button></div><div class="buttonContainer"><button></button></div><div class="buttonContainer"><button></button></div><h2 class="disagree">disagree</h2></div>';
 });
+
+(function(){
+  var allQuestionAnswers = document.querySelectorAll("div.questions div.question button");
+  for(var questionAnswerIndex = 0;questionAnswerIndex < allQuestionAnswers.length;questionAnswerIndex++){
+    allQuestionAnswers[questionAnswerIndex].setAttribute("onclick","answerQuestion(this)");
+  }
+})();
+
+function answerQuestion(button){
+  if(button.parentElement.parentElement.getElementsByClassName("active").length > 0){
+    button.parentElement.parentElement.getElementsByClassName("active")[0].removeAttribute("class");
+  }
+  button.setAttribute("class","active");
+}
