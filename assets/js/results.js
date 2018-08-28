@@ -138,3 +138,34 @@ updateHTML(progressive_percent, traditional_percent, "social");
 updateHTML(freedom_percent, intervention_percent, "economic");
 updateHTML(imperialist_percent, isolationist_percent, "foreign");
 updateHTML(democratic_percent, republican_percent, "party");
+
+(function(){
+  var overall_personality = "";
+
+  if(traditional_percent >= progressive_percent){
+    overall_personality += "T";
+  }else{
+    overall_personality += "P";
+  }
+
+  if(intervention_percent >= freedom_percent){
+    overall_personality += "I";
+  }else{
+    overall_personality += "F";
+  }
+
+  if(imperialist_percent >= isolationist){
+    overall_personality += "M";
+  }else{
+    overall_personality += "S";
+  }
+
+  if(democratic_percent >= republican_percent){
+    overall_personality += "-D";
+    document.querySelector("div.mainResult").classList.add("d");
+  }else{
+    overall_personality += "-R";
+  }
+
+  document.querySelector("div.mainResult").innerHTML = overall_personality;
+})();
