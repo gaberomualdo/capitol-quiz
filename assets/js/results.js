@@ -116,6 +116,10 @@ answers.forEach(function(answer,index){
 function updateHTML(percentleft, percentright, classname){
   percentright = Math.ceil(percentright);
   percentleft = Math.floor(percentleft);
+  if(!percentleft || !percentright) {
+    percentleft = 50;
+    percentright = 50;
+  }
   document.querySelector("div.result." + classname + " div.bar div.left").setAttribute("style","width:" + percentleft + "%;");
   document.querySelector("div.result." + classname + " div.bar div.right").setAttribute("style","width:" + percentright + "%;");
   document.querySelector("div.result." + classname + " div.bar .leftlabel").innerHTML = (percentleft + "%");
@@ -135,7 +139,7 @@ var democratic_percent = (progressive_percent + intervention_percent) / 2;
 var republican_percent = (traditional_percent + freedom_percent) / 2;
 
 updateHTML(progressive_percent, traditional_percent, "social");
-updateHTML(freedom_percent, intervention_percent, "economic");
+updateHTML(intervention_percent, freedom_percent, "economic");
 updateHTML(imperialist_percent, isolationist_percent, "foreign");
 updateHTML(democratic_percent, republican_percent, "party");
 
