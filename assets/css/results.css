@@ -56,6 +56,9 @@ div.results div.result div.bar div,div.results div.result div.bar h2,div.results
   box-sizing: border-box;
   padding: 0 0.375rem;
 }
+div.results div.result div.bar div {
+  padding: 0 !important;
+}
 div.results div.result div.bar h2 {
   background-color: transparent;
   width: 50%;
