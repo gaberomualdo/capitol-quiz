@@ -26,7 +26,7 @@ var questions = [
   'We should continue our partnership with western European nations.',
   'We should attack North Korea before they attack us.',
   'We should focus more on our domestic problems, not about the problems in other countries.',
-  'We should support countries like Saudi Arabia, regardless of their treatment of women and other social groups.',
+  'We should continue to maintain strategic alliances with countries like Saudi Arabia, regardless of their treatment of women and other social groups.',
   'We should continue to support Israel unconditionally to maintain a foothold in the Middle East.',
   'We should maintain our military bases abroad, regardless of the spending required to do so.',
   'We should keep Guantanamo Bay open and continue to use enhanced interrogation methods on high-risk terrorism suspects.',
