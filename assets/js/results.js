@@ -153,13 +153,13 @@ updateHTML(democratic_percent, republican_percent, "party");
   }
 
   if(intervention_percent >= freedom_percent){
-    overall_personality += "I";
+    overall_personality += "R";
   }else{
     overall_personality += "F";
   }
 
   if(imperialist_percent >= isolationist){
-    overall_personality += "M";
+    overall_personality += "I";
   }else{
     overall_personality += "S";
   }
